@@ -1,0 +1,25 @@
+{
+    "name": "@air-js-library/weave-mind-web",
+    "version": "1.0.0",
+    "description": "一个Chrome浏览器插件，通过示范学习和一键执行来简化Web自动化工作流，并包含一个社区市场用于分享和下载工作流。",
+    "main": "dist/index.js",
+    "keywords": [],
+    "scripts": {
+        "dev": "tsup --watch --sourcemap inline",
+        "build": "tsup && npm run gen-doc",
+        "test": "jest",
+        "gen-doc": "typedoc --out docs --plugin typedoc-plugin-markdown --plugin typedoc-plugin-rename-defaults --readme none --excludeExternals --excludePrivate --excludeProtected src"
+    },
+    "author": "linyunyi <471177894@qq.com>",
+    "repository": "https://github.com/mouse123/WeaveWeb.git",
+    "bugs": "https://github.com/mouse123/WeaveWeb/issues",
+    "homepage": "https://github.com/mouse123/WeaveWeb",
+    "devDependencies": {
+        "jest": "^29.6.4",
+        "tsup": "^7.2.0",
+        "typedoc": "^0.25.1",
+        "typedoc-plugin-markdown": "^3.16.0",
+        "typedoc-plugin-rename-defaults": "^0.6.6",
+        "typescript": "^5.2.2"
+    }
+}
